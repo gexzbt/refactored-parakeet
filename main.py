@@ -34,7 +34,7 @@ frame_baixo.grid(row=1, column=0, columnspan=3, pady=1, padx=0, sticky=NSEW)
 
 
 #frame esquerdo..
-img_1 = Image.open('iconmu.png')
+img_1 = Image.open(r'iconmu.png')
 img_1 = img_1.resize((130,130))
 img_1 = ImageTk.PhotoImage(img_1)
 
@@ -169,7 +169,7 @@ img_7 = ImageTk.PhotoImage(img_7)
 l_stop = Button(frame_baixo, command=canc_musica, image= img_7, width=40, height=40, font=('ivy 10 bold'), relief=RAISED, overrelief=RIDGE, bg=co3, fg=co4)
 l_stop.place(x=263, y=35)
 
-os.chdir (r'C:\Users\User\OneDrive\Documents\audios')
+os.chdir ('audios')
 musicas = os.listdir()
 
 
